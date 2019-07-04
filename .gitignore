@@ -1,0 +1,11 @@
+.bundle/
+.vagrant/
+Gemfile.lock
+Vagrantfile
+output-xenial64-vbox/
+output-xenial64-vmware/
+packer_cache/
+vendor/
+xenial64-vbox.box
+xenial64-vmware.box
+.kitchen/

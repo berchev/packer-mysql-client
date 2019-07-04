@@ -1,0 +1,22 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: shell
+
+platforms:
+  - name: mysql_client64_vbox 
+    driver:
+      box: mysql_client64_vbox
+      provider: virtualbox
+  - name: mysql_client64_vmware
+    driver:
+      box: mysql_client64_vmware
+      provider: vmware_desktop
+
+verifier:
+  name: inspec
+
+suites:
+  - name: default
